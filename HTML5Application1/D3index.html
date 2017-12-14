@@ -6,49 +6,103 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Enebreapp</title>
-        <meta charset="UTF-8">
-        <link rel ="stylesheet" href ="newcss.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+    html, body {
+    height:100%;
+    }
+
+    h1 {
+    font-family: "Antic Slab", serif;
+    font-size:80px;
+    color:#DDCCEE;
+    }
+
+    .lead {
+    color:#DDCCEE;
+    }
+
+    /* Custom container */
+    .container-full {
+    margin: 0 auto;
+    width: 100%;
+    min-height:100%;
+    background-color:#110022;
+    color:#eee;
+    overflow:hidden;
+    }
+
+    .container-full a {
+    color:#efefef;
+    text-decoration:none;
+    }
+
+    .v-center {
+    margin-top:7%;
+    }
+    #MenuChoices {
+    
+    }
+  </style>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- jQuery library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- Latest compiled JavaScript -->
+</head>
     <body>
         <div class="container-full">
-
             <div class="row">
+            <div class="col-lg-12 text-center v-center">
 
-                <div class="col-lg-12 text-center v-center">
-
-                    <h1>Wooziē</h1>
-                    <p class="lead">A simple test for BAC</p>
-
-                    <br>
+            <h1>Wooziē</h1>
+            <p class="lead">A simple test for BAC</p>
+            <br>
                     
-                    <form class="col-lg-12">
-                        <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
-                            <input type="text" class="center-block form-control input-lg" id = "weight" title="Weight" placeholder="Enter your weight">
-                            <span class="input-group-btn"><a href = "index.phtml"><button class="btn btn-lg btn-primary" type="button">OK</button></a></span>
+            <form class="col-lg-12" action="D3BACChart.php" method="get">
+            <label> Weight:
+            <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
+            
+            <select class="center-block form-control select-lg" id="weight" name="Weight" title="Weight" placeholder="Enter your weight">
+            <option selected> Please select your Weight </option> 
+            <option value="100lbs"> 100lbs </option>
+            <option value="120lbs"> 120lbs </option>
+            <option value="140lbs"> 140lbs </option>
+            <option value="160lbs"> 160lbs </option>
+            <option value="180lbs"> 180lbs </option>
+            <option value="200lbs"> 200lbs </option>
+            <option value="220lbs"> 220lbs </option>
+            <option value="240lbs"> 240lbs </option>
+            
+            </label>
+            
+            <span class="input-group-btn"> 
+                <a href = "D3index.html">
+                <input type="submit" action="D3BAChart.php" class=" btn btn-lg btn-primary" value="OK"> 
+                </a>
+            </span>
                             
-                        </div>
-                        <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
-                            <input list = "MorF" class="center-block form-control input-lg" id = "MorF">
-                            <datalist>
-                                <option value ="Male">
-                                <option value = "Female">
-                            </datalist> 
-                        </div>
-                        
-                    </form>
-                    
-                </div>
+            </div>
+            <label> Gender:
+           
+            <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
+              
+            <select name="Gender" class="center-block form-control input-lg" id="MorF">
+            <option selected> Please select your Gender </option> 
+            <option value ="Male"> Male </option>
+            <option value = "Female"> Female </option>
+            
+       
+            </div>  
+             
 
-            </div> <!-- /row -->
+            </form>
+                
+            
+            </div>
 
-
-
-
-
-            <br><br><br><br><br>
+        </div> <!-- /row -->
+        <br><br><br><br><br>
 
         </div> <!-- /container full -->
     </body>
