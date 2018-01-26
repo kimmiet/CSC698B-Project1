@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> D3 Menu Options </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  @import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+  html, body {
+  height:100%;
+  }
+
+  h1 {
+    font-family: "Antic Slab", serif;
+    font-size:80px;
+    color:#DDCCEE;
+  }
+
+  .lead {
+    color:#DDCCEE;
+  }
+
+  /* Custom container */
+  .container-full {
+    margin: 0 auto;
+    width: 100%;
+    min-height:100%;
+    background-color:#110022;
+    color:#eee;
+    overflow:hidden;
+  }
+
+  .container-full a {
+    color:#efefef;
+    text-decoration:none;
+  }
+
+  .v-center {
+    margin-top:7%;
+  }
+  #MenuChoices {
+    
+  }
+  </style>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- jQuery library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- Latest compiled JavaScript -->
+</head>
+<body>
+
+  <div class="container-full">
+    <div id="MenuChoices" class="btn-group-vertical">
+      
+      <div>
+        <button type="button" class="btn-lg btn-primary"> <span class="glyphicon glyphicon-camera"></span> </button>
+      </div>
+      <br></br>
+
+      <div>
+        <button type="button" class="btn-lg btn-active btn-success"> <span class="glyphicon glyphicon-user"></span> </button>
+        <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70%
+        </div>
+      </div>
+
+      </div>
+
+      <div>
+       <button type="button" class="btn-lg btn-active btn-warning"> <span class="glyphicon glyphicon-cog"></span> </button>
+      </div>
+
+      <div>
+        <button type="button" class="btn-lg btn-active btn-info"> <span class="glyphicon glyphicon-knight"></span> </button>
+      </div>
+        </div>  
+</div> <!-- end of container div -->
+
+</body>
+</html>
