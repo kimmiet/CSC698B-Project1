@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+    html, body {
+    height:100%;
+    }
+
+    h1 {
+    font-family: "Antic Slab", serif;
+    font-size:80px;
+    color:#DDCCEE;
+    }
+
+    .lead {
+    color:#DDCCEE;
+    }
+
+    /* Custom container */
+    .container-full {
+    margin: 0 auto;
+    width: 100%;
+    min-height:100%;
+    background-color:#110022;
+    color:#eee;
+    overflow:hidden;
+    }
+
+    .container-full a {
+    color:#efefef;
+    text-decoration:none;
+    }
+
+    .v-center {
+    margin-top:7%;
+    }
+    #MenuChoices {
+    
+    }
+  </style>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- jQuery library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- Latest compiled JavaScript -->
+</head>
+    <body>
+        <div class="container-full">
+            <div class="row">
+            <div class="col-lg-12 text-center v-center">
+
+            <h1>Wooziē</h1>
+            <p class="lead">A simple test for BAC</p>
+            <br>
+                    
+            <form class="col-lg-12" action="D3BACChart.php" method="get">
+            <label> Weight:
+            <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
+            
+            <select class="center-block form-control select-lg" id="weight" name="Weight" title="Weight" placeholder="Enter your weight">
+            <option selected> Please select your Weight </option> 
+            <option value="100lbs"> 100lbs </option>
+            <option value="120lbs"> 120lbs </option>
+            <option value="140lbs"> 140lbs </option>
+            <option value="160lbs"> 160lbs </option>
+            <option value="180lbs"> 180lbs </option>
+            <option value="200lbs"> 200lbs </option>
+            <option value="220lbs"> 220lbs </option>
+            <option value="240lbs"> 240lbs </option>
+            </select>
+            </label>
+            
+            <span class="input-group-btn"> 
+                <a href = "D3index.html">
+                <input type="submit" class=" btn btn-lg btn-primary" value="OK"> 
+                </a>
+            </span>
+                            
+            </div>
+            <label> Gender:
+           
+            <div class="input-group input-group-lg col-sm-12">
+              
+            <select name="Gender" class="center-block form-control input-lg" id="MorF">
+            <option selected> Please select your Gender </option> 
+            <option value ="Male"> Male </option>
+            <option value = "Female"> Female </option>
+            
+            </select>
+            </div>  
+             
+
+            </form>
+                
+            
+            </div>
+
+        </div> <!-- /row -->
+        <br><br><br><br><br>
+
+        </div> <!-- /container full -->
+    </body>
+</html>

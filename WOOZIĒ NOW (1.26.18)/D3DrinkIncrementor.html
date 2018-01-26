@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Wooziē</title>
+        <meta charset="UTF-8">
+        <link rel ="stylesheet" href ="newcss.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+  @import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+  html, body {
+  height:100%;
+  }
+
+  h1 {
+    font-family: "Antic Slab", serif;
+    font-size:80px;
+    color:#DDCCEE;
+  }
+
+  .lead {
+    color:#DDCCEE;
+  }
+
+  /* Custom container */
+  .container-full {
+    margin: 0 auto;
+    width: 100%;
+    min-height:100%;
+    background-color:#110022;
+    color:#eee;
+    overflow:hidden;
+  }
+
+  .container-full a {
+    color:#efefef;
+    text-decoration:none;
+  }
+
+  .v-center {
+    margin-top:7%;
+  }
+  #MenuChoices {
+    
+  }
+  </style>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- jQuery library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- Latest compiled JavaScript -->
+</head>
+    </head>
+    <body>
+        <div class="container-full">
+
+            <div class="row">
+
+                <div class="col-lg-12 text-center v-center">
+
+                    <h1>Wooziē</h1>
+                    <p class="lead">Intoxication levels</p>
+
+                    <br>
+                    
+                        <div>
+                        <!--span class="input-group-btn"><a href =BACtable.html><button  class="btn btn-lg btn-primary"  type="button">Drinks</button></</span>
+                        </div>
+                    <input class="btn btn-lg btn-primary" type="number" id="myNumber">
+                    
+                    <script>
+function myFunction() {
+    document.getElementById("myNumber").stepUp(1);
+}
+                    </script-->
+                    <script>
+                        var value = 0;
+
+function add() {
+    value++;
+    document.getElementById("field").innerHTML = value;
+}
+                    </script>
+                    
+                    <form>
+                        <input class="btn btn-lg btn-primary" type="button" value="Drinks" onclick="add();"/>
+                    </form>
+                    <span class="btn btn-lg btn-primary" id="field">0</span>
+                    
+                </div>
+                </div>
+
+            </div> <!-- /row -->
+             <script>
+        var male100=[.00, .06, .12, .18, .24, .30];
+        var male120=[.00, .05, .10, .15, .20, .25];
+        var male140=[.00, .04, .09, .13, .17, .21];
+        var male180=[.00, .03, .07, .10, .13, .17];
+        var male200=[.00, .03, .06, .09, .12, .15];
+        var male220=[.00, .03, .05, .08, .11, .14];
+        var male240=[.00, .02, .05, .07, .10, .12];
+        
+        var female100=[.00, .07, .13, .20, .26, .33];
+        var female120=[.00, .06, .11, .17, .22, .28];
+        var female140=[.00, .05, .09, .14, .19, .24];
+        var female160=[.00, .04, .08, .12, .17, .21];
+        var female180=[.00, .04, .07, .11, .15, .18];
+        var female200=[.00, .03, .07, .10, .13, .17];
+        var female220=[.00, .03, .06, .09, .12, .15];
+        var female240=[.00, .03, .06, .08, .11, .14];​
+</script>
+
+
+
+
+            <br><br><br><br><br>
+
+        </div> <!-- /container full -->
+    </body>
+</html>
